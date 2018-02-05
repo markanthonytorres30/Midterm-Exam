@@ -41,7 +41,7 @@ export class UserService {
     });
   }
 
-  getNote(id: string) {
+  getUser(id: string) {
     return this.afs.doc<User>(`notes/${id}`);
   }
 

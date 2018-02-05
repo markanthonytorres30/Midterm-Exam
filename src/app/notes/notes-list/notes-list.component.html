@@ -10,12 +10,12 @@
 <input [(ngModel)]="something" placeholder="Write something" class="input">
 
 
-<button class="button is-success" (click)="createNote()" [disabled]="content?.length < 2 || content?.length > 200">
-  Add Note
+<button class="button is-success" (click)="createUser()" [disabled]="company?.length < 2 || company?.length > 200">
+  Add User
 </button>
 <hr>
-<div *ngFor="let note of notes | async">
-  <note-detail [note]="note"></note-detail>
+<div *ngFor="let user of users | async">
+  <note-detail [user]="user"></note-detail>
 </div>
 
 

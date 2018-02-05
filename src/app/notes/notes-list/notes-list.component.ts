@@ -13,7 +13,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class UserListComponent implements OnInit {
 
-  notes: Observable<User[]>;
+  user: Observable<User[]>;
   company: string;
   firstName: string;
   lastName: string;
@@ -31,7 +31,7 @@ export class UserListComponent implements OnInit {
   }
 
   createUser() {
-    this.userService.create(this.content,this.firstName,this.lastName,this.email,this.address,this.phone,this.something);
+    this.userService.create(this.company,this.firstName,this.lastName,this.email,this.address,this.phone,this.something);
     this.company = '';
     this.firstName = '';
     this.lastName = '';
