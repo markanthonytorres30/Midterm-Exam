@@ -1,6 +1,10 @@
-export interface Note {
-  content: string;
-  hearts: number;
+export interface User {
   id?: string;
-  time: number;
+  company: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  address: string;
+  phone: string;
+  something: string;
 }
